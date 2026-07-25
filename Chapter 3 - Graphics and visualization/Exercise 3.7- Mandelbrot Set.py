@@ -20,5 +20,8 @@ for i,y in enumerate(np.linspace(-2,2,width)):
             mandelbrot[i,j] = maxiter
 
 plt.imshow(mandelbrot)
+plt.title("Mandelbrot Set")
+plt.xlabel("Re")
+plt.ylabel("Im")
 plt.show()
 
