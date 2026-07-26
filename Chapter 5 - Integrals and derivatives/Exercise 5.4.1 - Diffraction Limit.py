@@ -33,6 +33,6 @@ for i,y in enumerate(np.linspace(-1e-6,1e-6,width)):
            r = R = np.sqrt(x**2 + y**2)
            density[i,j] = I(r)
 
-plt.imshow(density, vmax=0.01, cmap='hot')
+plt.imshow(density, vmax=0.01, cmap='inferno')
 plt.colorbar(label="Intensity")
 plt.show()
