@@ -22,8 +22,7 @@ r = np.exp(np.cos(theta)) - 2*np.cos(4*theta) + np.sin(theta/12)**5
 x4 = r*np.cos(theta)
 y4 = r*np.sin(theta)
 
-
-fig, axs = plt.subplots(2, 2, figsize=(10, 8))
+fig, axs = plt.subplots(2, 2, figsize=(8, 6))
 
 axs[0,0].plot(x1, y1, color="blue")
 axs[0,0].set_title("Sin Curve")
@@ -37,10 +36,9 @@ axs[1,0].set_title("Galilean Spiral")
 axs[1,1].plot(x4, y4, color="red")
 axs[1,1].set_title("Fey's Function")
 
+fig.canvas.manager.set_window_title('Plotting Functions')
 
 for ax in axs.flat:
     ax.grid(True)
-    ax.set_aspect("equal")
-
 
 plt.show()
