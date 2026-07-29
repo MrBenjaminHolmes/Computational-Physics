@@ -25,6 +25,6 @@ def EulerMaclaurin(a, b, N, f):
 N=10
 I=EulerMaclaurin(0, 2, N, f)
 error = 100* (np.abs(I)-4.4)/4.4
-print("N=",N, ", I=",abs(I), ", Error (%) =",error)
+print("N=",N, ", I=",abs(I), ", Error (%) =",error) 
 
 #N= 10 , I= 4.399626666666667 , Error (%) = -0.008484848484843512
