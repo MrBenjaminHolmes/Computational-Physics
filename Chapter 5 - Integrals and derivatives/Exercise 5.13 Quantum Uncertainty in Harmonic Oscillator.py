@@ -53,3 +53,4 @@ integrand = lambda z: (1+z**2)/((1-z**2)**2) * f(5,((z)/(1-z**2)))
 s,_ = fixed_quad(integrand, -1, 1, n=100)
 
 print(np.sqrt(s))
+#2.345207873785794
