@@ -18,6 +18,7 @@ def trapeziumRule(a, b, N, f):
 
 print("Approximate integral =", trapeziumRule(0,2,10, f))
 print("e2 = ", 1/3*(trapeziumRule(0,2,10,f)-trapeziumRule(0,2,20,f)))
-
+error = 100* (np.abs(trapeziumRule(0,2,10,f))-4.4)/4.4
+print(error)
 #Approximate integral = 4.50656
 #e2 =  0.026633333333333137
